@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="page" id="page1">
+			<p>Приветствие</p>
+			<form action="#page2">
+  				<button class="btn next">Далее</button>
+			</form>
+    	</div>
+		<div class="page" id="page2">
+			<p>Сколько будет 2 + 2?</p>
+			<label for="result_4">
+				4<input type="radio" name="result" id="result_4" class="num">
+			</label>
+			<label for="result_7">
+				<input type="radio" name="result" id="result_7" class="num">7
+			</label>
+      		<form action="#page1">
+  				<button class="btn back">Назад</button>
+			</form>
+			<form id='active-form'>
+  				<button id="active" class="btn next" disabled>Далее</button>
+			</form>
+      		 <input type="text" class="smile" disabled>
+      		<i class="fas fa-smile"></i>
+			<i class="fas fa-frown"></i>
+			 <input type="text" class="frown" disabled>
+    	</div>
+		<div class="page" id="page3">
+			<p>Тест завершен, результаты отличные</p>
+      		<form action="#page2">
+  				<button class="btn back clean">Назад</button>
+			</form>
+			<form action="#page2">
+  				<button class="btn next clean">Заново</button>
+			</form>
+      		<input type="text" class="smile" disabled>
+      		<i class="fas fa-smile"></i>
+			<i class="fas fa-frown"></i>
+			<input type="text" class="frown" disabled>
+    	</div>
+		<div class="page" id="page4">
+			<p>Тест завершен, результаты плачевные</p>
+			<form action="#page2">
+  				<button class="btn back clean">Назад</button>
+			</form>
+			<form action="#page2">
+  				<button class="btn next clean">Заново</button>
+			</form>
+			<input type="text" class="smile" disabled>
+      		<i class="fas fa-smile"></i>
+			<i class="fas fa-frown"></i>
+			<input type="text" class="frown" disabled>
+			</div>
+		</div>
+	</div>
+
+	<script src="core/jquery-3.3.1.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
